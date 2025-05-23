@@ -50,11 +50,11 @@ def generate_complete_path(actors_dict: dict, path: list) -> dict:
 
 class ActorQuery:
     def __init__(self, actor_1: str, actor_2: str):
-        self.act_origin = actor_1
-        self.act_destination = actor_2
-        self.valid = False
-        self.bacon_number = inf
-        self.complete_path = dict()
+        self.act_origin = actor_1           # origin actor (vector)
+        self.act_destination = actor_2      # destination actor (vector)
+        self.valid = False                  # starting query not valid
+        self.bacon_number = inf             # initial bacon number is infinite
+        self.complete_path = dict()         # to store complete path infor
 
     def print_string(self):
         """
@@ -80,11 +80,21 @@ class ActorQuery:
 
     # assume dictionary containing k: actor name, v: actor objects
     def run_augmented_bfs(self, actors_dict: dict) -> None:
+        """
+        Adaptation of Dijkstra's shortest path algorithm as discussed in
+        Roughgarden (2022) for the purpose of shortest path tracking from
+        an origin actor to destination actor (vectors) using their films as
+        connections, or edges.
+        :param actors_dict:
+        :return:
+        """
         # get the origin key (analogous to s in Roughgarden)
         origin_key, destination_key = self.act_origin, self.act_destination
-
+        # if the keys are both found in the provided dictionary, the query
+        # is valid.
         if origin_key in actors_dict and destination_key in actors_dict:
             self.valid = True
+        # otherwise it is not, and we do not proceed.
         else:
             return
         # mark origin as explored, all other vertices as unexplored
@@ -93,7 +103,6 @@ class ActorQuery:
         actors_dict[origin_key].bacon_number = 0
         # check not self
         if self.act_origin == self.act_destination:
-            self.bacon_number = 0
             print("Origin is same as destination")
             return
         # initialize queue data structure, with origin as initial entry
