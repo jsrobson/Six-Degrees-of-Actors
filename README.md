@@ -1,0 +1,6 @@
+# Degrees of Kevin Bacon ("Baconator")
+
+This program is an application of [Dijkstra's canonical shortest path algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) using non-negative edge weights (1956) to find the number of steps distance between two actors (nodes) in a database given intersections (other actors) in their filmography (edges). This is a sector-specific application of the academic Erdős number. The program accepts two input strings from a user – source and destination actors – and applies the shortest path algorithm and an complementary path reconstruction algorithm to find both the [Bacon Number](https://en.wikipedia.org/wiki/Six_Degrees_of_Kevin_Bacon#Bacon_numbers) of the destination actor (the number of degrees of separation from the source) and the co-starring actors (and films in which they co-starred) in between the source and destination.
+
+## Data Attribution
+The program uses a cleaned database of scraped IMDB data for 10k actors, made available under Creative Commons licence CC0: Public Domain by kaggle user HugeQuiz.com. The original dataset can be found [here](https://www.kaggle.com/datasets/darinhawley/imdb-films-by-actor-for-10k-actors?select=actorfilms.csv).
