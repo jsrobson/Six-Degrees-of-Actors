@@ -8,6 +8,9 @@ This program is an application of [Dijkstra's canonical shortest path algorithm]
 The program accepts two input strings from a user – **source actor and destination actor** – and applies the shortest path algorithm and an complementary path reconstruction algorithm to find both :
 - The [Bacon Number](https://en.wikipedia.org/wiki/Six_Degrees_of_Kevin_Bacon#Bacon_numbers) of the destination actor (the number of degrees of separation from the source)
 - The co-starring actors (and films in which they co-starred) in between the source and destination.
+
+This algorithmic exploration was motivated by a long walk spent listening to Katie Goldin and Alex Schmidt talk about the history of Bacon Numbers on their podcast [Secretly Incredibly Fascinating](https://maximumfun.org/episodes/secretly-incredibly-fascinating/secretly-incredibly-fascinating-six-degrees-of-kevin-bacon) and the motivating application of graph theory to this area of inquiry.
+
 ---
 
 ## Data Attribution
