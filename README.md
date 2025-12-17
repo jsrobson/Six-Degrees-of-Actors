@@ -9,7 +9,7 @@ The program accepts two input strings from a user – **source actor and destina
 - The [Bacon Number](https://en.wikipedia.org/wiki/Six_Degrees_of_Kevin_Bacon#Bacon_numbers) of the destination actor (the number of degrees of separation from the source)
 - The co-starring actors (and films in which they co-starred) in between the source and destination.
 
-This algorithmic exploration was motivated by a long walk spent listening to Katie Goldin and Alex Schmidt talk about the history of Bacon Numbers on their podcast [Secretly Incredibly Fascinating](https://maximumfun.org/episodes/secretly-incredibly-fascinating/secretly-incredibly-fascinating-six-degrees-of-kevin-bacon) and the motivating application of graph theory to this area of inquiry.
+This project was inspired by a long walk listening to Katie Goldin and Alex Schmidt discuss the history of Bacon Numbers on their podcast [Secretly Incredibly Fascinating](https://maximumfun.org/episodes/secretly-incredibly-fascinating/secretly-incredibly-fascinating-six-degrees-of-kevin-bacon) and the clear connection of graph theory to model this concept.
 
 ---
 
