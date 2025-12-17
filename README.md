@@ -37,7 +37,7 @@ The original dataset can be found [here](https://www.kaggle.com/datasets/darinha
 1. Clone the repository
 ```bash
 git clone https://github.com/jsrobson/Six-Degrees-of-Actors.git
-cd Six-Degrees-of-Actorss
+cd Six-Degrees-of-Actors
 ```
 2. Create a virtual environment (recommended)
 ```bash
