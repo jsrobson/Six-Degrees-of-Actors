@@ -1,6 +1,5 @@
 # == Third party import
 import pytest
-from unittest.mock import patch, MagicMock
 import pandas as pd
 # == Local import
 from models.actor import Actor

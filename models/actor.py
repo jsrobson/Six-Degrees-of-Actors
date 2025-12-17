@@ -1,8 +1,6 @@
 # == Standard Library imports ==
-from math import inf
-
-# == Local imports ==
 from dataclasses import dataclass, field
+from math import inf
 
 @dataclass
 class Actor:
