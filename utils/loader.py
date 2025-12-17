@@ -91,12 +91,12 @@ class Loader:
           handles loading movie data from CSV into dataframe, aggregating
           actor-level filmographies, building Actor objects and co-star
           relationships, and prompting user for two actor names for querying.
-
           Attributes:
-              filepath (Path): Path to the movie dataset CSV file.
-              actor_1 (str): The user-provided origin actor.
-              actor_2 (str): The user-provided destination actor.
-              actor_dict (Dict[str, Actor]): Dictionary mapping actor names to Actor objects.
+              - filepath (Path): Path to the movie dataset CSV file.
+              - actor_1 (str): The user-provided origin actor.
+              - actor_2 (str): The user-provided destination actor.
+              - actor_dict (Dict[str, Actor]): Dictionary mapping actor
+              names to Actor objects.
           """
         self.filepath: Path = Path(fpath)
         self.actor_1: str
