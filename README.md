@@ -33,7 +33,7 @@ The original dataset can be found [here](https://www.kaggle.com/datasets/darinha
 
 ---
 
-## Intstallation
+## Installation
 1. Clone the repository
 ```bash
 git clone https://github.com/jsrobson/Six-Degrees-of-Actors.git
