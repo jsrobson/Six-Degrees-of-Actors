@@ -3,13 +3,13 @@
 ![Python](https://img.shields.io/badge/python-3.11-blue?logo=python)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
-This program is an application of [Dijkstra's canonical shortest path algorithm](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) using non-negative edge weights (1956) to find the number of steps distance between two actors (nodes) in a database given intersections (other actors) in their filmography (edges). This is a sector-specific application of the academic Erdős number and Breadth-First-Search (BFS).
+This program is an application of [Dijkstra's canonical shortest path algorithm (1956)](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) (Breadth-First-Search, BFS) using non-negative edge weights to find the number of steps distance between two actors (nodes) in a database given intersections (other actors) in their filmography (edges). This is a sector-specific application of the academic [Erdős number](https://en.wikipedia.org/wiki/Erdős_number).
 
-The program accepts two input strings from a user – **source actor and destination actor** – and applies the shortest path algorithm and an complementary path reconstruction algorithm to find both :
-- The [Bacon Number](https://en.wikipedia.org/wiki/Six_Degrees_of_Kevin_Bacon#Bacon_numbers) of the destination actor (the number of degrees of separation from the source)
-- The co-starring actors (and films in which they co-starred) in between the source and destination.
+The program accepts two input strings from a user – **origin actor and destination actor** – and applies the shortest path algorithm and an complementary path reconstruction algorithm to find both :
+- The [Bacon Number](https://en.wikipedia.org/wiki/Six_Degrees_of_Kevin_Bacon#Bacon_numbers) of the destination actor (the number of degrees of separation from the origin)
+- The co-starring actors (and films in which they co-starred) in between the origin and destination.
 
-This project was inspired by a long walk listening to Katie Goldin and Alex Schmidt discuss the history of Bacon Numbers on their podcast [Secretly Incredibly Fascinating](https://maximumfun.org/episodes/secretly-incredibly-fascinating/secretly-incredibly-fascinating-six-degrees-of-kevin-bacon) and the clear connection of graph theory to model this concept.
+This project was inspired by a long walk listening to Katie Goldin and Alex Schmidt discuss the history of Bacon Numbers on their podcast [Secretly Incredibly Fascinating](https://maximumfun.org/episodes/secretly-incredibly-fascinating/secretly-incredibly-fascinating-six-degrees-of-kevin-bacon) and the clear connection of graph theory to effectively model this concept.
 
 ---
 
@@ -47,6 +47,7 @@ python -m venv .venv
 source .venv/bin/activate
 
 # Windows
+.venv\Scripts\activate
 ```
 3. Install dependencies
 ```bash
