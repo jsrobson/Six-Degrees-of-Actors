@@ -1,5 +1,3 @@
-# == Standard Library import
-from collections import deque
 # == Third party import
 import pytest
 # == Local import
